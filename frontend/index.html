@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Barbearia</title>
+</head>
+<body>
+
+    <h1>Sistema de Barbearia</h1>
+
+    <p>Não possui uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+
+    <section id="login">
+
+        <h2>Login</h2>
+
+        <h3>Cliente</h3>
+
+        <input type="text" id="logCpf" placeholder="CPF">
+        <input type="password" id="logSenha" placeholder="Senha">
+        <button id="btnLog">Entrar como Cliente</button>
+
+        <h3>Barbeiro</h3>
+
+        <input type="email" id="logEmail" placeholder="Email">
+        <input type="password" id="logSenhaBarbeiro" placeholder="Senha">
+        <button id="btnLogBarbeiro">Entrar como Barbeiro</button>
+
+    </section>
+
+    <section id="painel" hidden>
+
+        <h2>Painel Principal</h2>
+
+        <p>Bem-vindo, <span id="nomeUsuario"></span></p>
+
+        <button id="btnLogout">Sair</button>
+
+        <hr>
+
+        <section id="gerenciarClientes">
+
+            <h2>Gerenciar Clientes</h2>
+
+            <h3>Cadastrar Cliente</h3>
+
+            <input type="text" id="cadNome" placeholder="Nome">
+            <input type="text" id="cadCpf" placeholder="CPF">
+            <input type="password" id="cadSenha" placeholder="Senha">
+            <input type="text" id="cadTelefone" placeholder="Telefone">
+
+            <button id="btnCad">Cadastrar Cliente</button>
+
+            <h3>Buscar Clientes</h3>
+
+            <input type="text" id="buscaCliente" placeholder="Nome, CPF ou telefone">
+            <button id="btnBuscar">Buscar</button>
+            <button id="btnGet">Listar Todos</button>
+
+            <div id="divGet"></div>
+
+            <h3>Atualizar Cliente</h3>
+
+            <input type="number" id="putId" placeholder="ID">
+            <input type="text" id="putNome" placeholder="Nome">
+            <input type="text" id="putCpf" placeholder="CPF">
+            <input type="password" id="putSenha" placeholder="Senha">
+            <input type="text" id="putTelefone" placeholder="Telefone">
+
+            <button id="btnPut">Atualizar Cliente</button>
+
+            <h3>Excluir Cliente</h3>
+
+            <input type="number" id="delId" placeholder="ID do cliente">
+            <button id="btnDel">Excluir Cliente</button>
+
+        </section>
+
+        <hr>
+
+        <section id="gerenciarBarbeiros">
+
+            <h2>Gerenciar Barbeiros</h2>
+
+            <h3>Cadastrar Barbeiro</h3>
+
+            <input type="text" id="cadNomeBarbeiro" placeholder="Nome">
+            <input type="email" id="cadEmailBarbeiro" placeholder="Email">
+            <input type="password" id="cadSenhaBarbeiro" placeholder="Senha">
+
+            <button id="btnCadBarbeiro">Cadastrar Barbeiro</button>
+
+            <h3>Listar Barbeiros</h3>
+
+            <button id="btnGetBarbeiro">Listar Barbeiros</button>
+
+            <div id="divGetBarbeiro"></div>
+
+            <h3>Atualizar Barbeiro</h3>
+
+            <input type="number" id="putIdBarbeiro" placeholder="ID">
+            <input type="text" id="putNomeBarbeiro" placeholder="Nome">
+            <input type="email" id="putEmailBarbeiro" placeholder="Email">
+            <input type="password" id="putSenhaBarbeiro" placeholder="Senha">
+
+            <button id="btnPutBarbeiro">Atualizar Barbeiro</button>
+
+            <h3>Excluir Barbeiro</h3>
+
+            <input type="number" id="delIdBarbeiro" placeholder="ID do barbeiro">
+            <button id="btnDelBarbeiro">Excluir Barbeiro</button>
+
+        </section>
+
+    </section>
+
+    <p id="mensagem"></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
